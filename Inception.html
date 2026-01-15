@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- remember to check the above with the closing tag again -->
+        <title>Apple Developer</title>
+    </head>
+    <body>
+        <main>
+            <section>
+                <h1>Displaying live data with Live Activities</h1>
+                 <h3>Display up-to-date data and offer quick interactions in the Dynamic Island, on the Lock Screen, 
+                    in CarPlay, and on a paired Mac or Apple Watch.</h3>
+            </section>
+            <section>
+                <h2>Overview</h2>
+                <p>Live Activities display your app's current data on the Lock Screen, in the Dynamic Island, in CarPlay,
+                    and on a paired Mac or Apple Watch, giving people access to information at a glance and allowing them
+                    to perform quick actions that are related to the displayed information.</p>
+                <p>To offer Live Activities, add code to your existing widget extension or create a new widget extension
+                    if your app doesn't already include one. Live Activities use <a href="https://developer.apple.com/documentation/WidgetKit", target="_blank">WidgetKit</a> functionality and 
+                    <a href="https://developer.apple.com/documentation/SwiftUI", target="_blank">SwiftUI</a> for
+                    their user interface. ActivityKit's role is to handle the life cycle of each Live Activity: You use its
+                    API to request, schedule, update, and end a Live Activity and to receive ActivityKit push notifications.</p>
+                <p>For design guidance, refer to <a href="https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/live-activities", target="_blank">Human Interface Guidelines > Live Activities.</a></p>
+            </section>
+            <section>
+                <h2>Review Live Activity presentations on iPhone and iPad</h2>
+                <p>Live Activities come in different presentations that appear in various highly visible places.
+                    To add support for Live Activities to your iOS or iPadOS app, you must support all presentations.
+                    The system automatically chooses the best presentation for each location across a person's devices.</p>
+                <p>The Lock Screen presentation appears on the Lock Screen of iPhone and iPad. On an unlocked device that
+                    doesn't support the Dynamic Island, the Lock Screen presentation appears as a banner for Live Activity
+                    updates that include an alert configuration. For example, if a person uses Mail on a device that doesn't
+                    support the Dynamic Island while your app's Live Activity receives an update with an alert configuration,
+                    the system displays the Lock Screen presentation as a banner at the top of the screen to let them know about
+                    the updated Live Activity.</p>
+                <img src="https://docs-assets.developer.apple.com/published/8ffa10d5fcdf94e7a06d03b14b7ec920/live-activity-notch~dark%402x.png", alt="Two iPhones showing dynamic island feature">
+                <p>Devices that support the Dynamic Island display Live Activities in the Dynamic Island using several presentations.
+                    When there's only one ongoing Live Activity, the system uses the compact presentation. It's composed of
+                    two elements: one that displays on the leading side of the TrueDepth camera, and one that displays on
+                    the trailing side. Although the leading and trailing elements are separate views, they form a cohesive
+                    view in the Dynamic Island, representing a single piece of information from your app. People can tap a compact
+                    Live Activity to open the app and get more details about the event or task.</p>
+            </section>
+        </main>
+    </body>
+</html>
